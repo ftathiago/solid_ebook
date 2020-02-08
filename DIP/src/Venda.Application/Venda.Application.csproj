@@ -1,17 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
     <ProjectReference Include="..\Venda.Crosscutting\Venda.Crosscutting.csproj" />
     <ProjectReference Include="..\Venda.Dominio\Venda.Dominio.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
   </ItemGroup>
-
   <PropertyGroup>
     <DebugType>full</DebugType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ProjectGuid>660463EF-9203-4875-9F70-C179566E4105</ProjectGuid>
   </PropertyGroup>
-
 </Project>

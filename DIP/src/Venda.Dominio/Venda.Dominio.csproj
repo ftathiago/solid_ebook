@@ -1,12 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
     <ProjectReference Include="..\Venda.Crosscutting\Venda.Crosscutting.csproj" />
   </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <Nullable>enable</Nullable>
+    <ProjectGuid>C890E577-45FA-44C1-81C3-358101ED813F</ProjectGuid>
   </PropertyGroup>
-
 </Project>

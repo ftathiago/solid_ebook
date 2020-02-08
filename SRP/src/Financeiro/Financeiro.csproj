@@ -1,12 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
     <ProjectReference Include="..\Cadastro\Cadastro.csproj" />
   </ItemGroup>
-
   <PropertyGroup>
     <Nullable>enable</Nullable>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ProjectGuid>CE324903-5B65-41E5-B966-0F3879CA5B13</ProjectGuid>
   </PropertyGroup>
-
 </Project>
