@@ -1,0 +1,934 @@
+{
+  "Venda.Crosscutting.dll": {
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Crosscutting/Models/ClienteDTO.cs": {
+      "Venda.Crosscutting.Models.ClienteDTO": {
+        "System.String Venda.Crosscutting.Models.ClienteDTO::get_Descricao()": {
+          "Lines": {
+            "5": 18
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Crosscutting.Models.ClienteDTO::.ctor(System.String)": {
+          "Lines": {
+            "6": 18,
+            "7": 18,
+            "8": 18,
+            "9": 18
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Crosscutting/Models/MensagemErro.cs": {
+      "Venda.Crosscutting.Models.MensagemErro": {
+        "System.String Venda.Crosscutting.Models.MensagemErro::get_Mensagem()": {
+          "Lines": {
+            "10": 6
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Crosscutting.Models.MensagemErro::.ctor(System.String)": {
+          "Lines": {
+            "5": 4,
+            "6": 4,
+            "7": 4,
+            "8": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Crosscutting/Models/VendaDTO.cs": {
+      "Venda.Crosscutting.Models.VendaDTO": {
+        "Venda.Crosscutting.Models.ClienteDTO Venda.Crosscutting.Models.VendaDTO::get_Cliente()": {
+          "Lines": {
+            "7": 20
+          },
+          "Branches": []
+        },
+        "Venda.Crosscutting.Models.FormaDePagamento Venda.Crosscutting.Models.VendaDTO::get_FormaDePagamento()": {
+          "Lines": {
+            "8": 20
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Venda.Crosscutting.Models.VendaItemDTO> Venda.Crosscutting.Models.VendaDTO::get_Itens()": {
+          "Lines": {
+            "9": 22
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Crosscutting/Models/VendaItemDTO.cs": {
+      "Venda.Crosscutting.Models.VendaItemDTO": {
+        "System.String Venda.Crosscutting.Models.VendaItemDTO::get_Descricao()": {
+          "Lines": {
+            "5": 30
+          },
+          "Branches": []
+        },
+        "System.Decimal Venda.Crosscutting.Models.VendaItemDTO::get_QuantidadeComprada()": {
+          "Lines": {
+            "6": 20
+          },
+          "Branches": []
+        },
+        "System.Decimal Venda.Crosscutting.Models.VendaItemDTO::get_ValorUnitario()": {
+          "Lines": {
+            "7": 20
+          },
+          "Branches": []
+        },
+        "System.Decimal Venda.Crosscutting.Models.VendaItemDTO::get_QuantidadePromocional()": {
+          "Lines": {
+            "8": 20
+          },
+          "Branches": []
+        },
+        "System.Decimal Venda.Crosscutting.Models.VendaItemDTO::get_ValorUnitarioPromocional()": {
+          "Lines": {
+            "9": 20
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Crosscutting.Models.VendaItemDTO::.ctor()": {
+          "Lines": {
+            "10": 10,
+            "11": 10,
+            "12": 10,
+            "13": 10
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Venda.Dominio.dll": {
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Dominio/Program.cs": {
+      "Venda.Dominio.Program": {
+        "System.Void Venda.Dominio.Program::Main(System.String[])": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Dominio/ValueObjects/Quantidade.cs": {
+      "Venda.Dominio.ValueObjects.Quantidade": {
+        "System.Decimal Venda.Dominio.ValueObjects.Quantidade::get_Value()": {
+          "Lines": {
+            "7": 51
+          },
+          "Branches": []
+        },
+        "System.Boolean Venda.Dominio.ValueObjects.Quantidade::Validar()": {
+          "Lines": {
+            "16": 19,
+            "17": 19,
+            "18": 19
+          },
+          "Branches": []
+        },
+        "Venda.Dominio.ValueObjects.Quantidade Venda.Dominio.ValueObjects.Quantidade::op_Implicit(System.Decimal)": {
+          "Lines": {
+            "21": 47,
+            "22": 47,
+            "23": 47
+          },
+          "Branches": []
+        },
+        "System.Decimal Venda.Dominio.ValueObjects.Quantidade::op_Implicit(Venda.Dominio.ValueObjects.Quantidade)": {
+          "Lines": {
+            "26": 24,
+            "27": 24,
+            "28": 24
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Dominio.ValueObjects.Quantidade::.ctor(System.Decimal)": {
+          "Lines": {
+            "10": 57,
+            "11": 57,
+            "12": 57,
+            "13": 57
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Dominio/ValueObjects/ValorUnitario.cs": {
+      "Venda.Dominio.ValueObjects.ValorUnitario": {
+        "System.Decimal Venda.Dominio.ValueObjects.ValorUnitario::get_Value()": {
+          "Lines": {
+            "7": 49
+          },
+          "Branches": []
+        },
+        "System.Boolean Venda.Dominio.ValueObjects.ValorUnitario::Validar()": {
+          "Lines": {
+            "15": 2,
+            "16": 2,
+            "17": 2
+          },
+          "Branches": []
+        },
+        "Venda.Dominio.ValueObjects.ValorUnitario Venda.Dominio.ValueObjects.ValorUnitario::op_Implicit(System.Decimal)": {
+          "Lines": {
+            "20": 66,
+            "21": 66,
+            "22": 66
+          },
+          "Branches": []
+        },
+        "System.Decimal Venda.Dominio.ValueObjects.ValorUnitario::op_Implicit(Venda.Dominio.ValueObjects.ValorUnitario)": {
+          "Lines": {
+            "25": 30,
+            "26": 30,
+            "27": 30
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Dominio.ValueObjects.ValorUnitario::.ctor(System.Decimal)": {
+          "Lines": {
+            "9": 79,
+            "10": 79,
+            "11": 79,
+            "12": 79
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Dominio/Services/Impl/SalvarVendaService.cs": {
+      "Venda.Dominio.Services.Impl.SalvarVendaService": {
+        "System.Boolean Venda.Dominio.Services.Impl.SalvarVendaService::Executar(Venda.Dominio.Entities.VendaEntity)": {
+          "Lines": {
+            "21": 6,
+            "23": 6,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "29": 4,
+            "30": 4,
+            "31": 2,
+            "33": 4,
+            "34": 6
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 23,
+              "Offset": 12,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 30,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 30,
+              "Offset": 60,
+              "EndOffset": 84,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Boolean Venda.Dominio.Services.Impl.SalvarVendaService::EhValido()": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "39": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<Venda.Crosscutting.Models.MensagemErro> Venda.Dominio.Services.Impl.SalvarVendaService::PegarMensagensErro()": {
+          "Lines": {
+            "42": 2,
+            "43": 2,
+            "44": 2
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Dominio.Services.Impl.SalvarVendaService::.ctor(Venda.Dominio.Repository.IVendaRepository)": {
+          "Lines": {
+            "14": 7,
+            "15": 7,
+            "16": 7,
+            "17": 7,
+            "18": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Dominio/Modules/Impl/CalculadoraPrecoVendaItem.cs": {
+      "Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem": {
+        "Venda.Dominio.ValueObjects.ValorUnitario Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem::Calcular(Venda.Crosscutting.Models.FormaDePagamento,Venda.Dominio.ValueObjects.Quantidade,Venda.Dominio.ValueObjects.ValorUnitario,Venda.Dominio.ValueObjects.Quantidade,Venda.Dominio.ValueObjects.ValorUnitario)": {
+          "Lines": {
+            "13": 18,
+            "14": 18,
+            "15": 11,
+            "16": 6,
+            "17": 17
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 11
+            },
+            {
+              "Line": 14,
+              "Offset": 13,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Boolean Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem::DeveUsarPrecoVendaNormal(Venda.Crosscutting.Models.FormaDePagamento,Venda.Dominio.ValueObjects.Quantidade,Venda.Dominio.ValueObjects.Quantidade)": {
+          "Lines": {
+            "21": 18,
+            "22": 18,
+            "23": 1,
+            "25": 17,
+            "26": 17,
+            "28": 17,
+            "29": 17
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 22,
+              "Offset": 13,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 17
+            }
+          ]
+        },
+        "System.Boolean Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem::FormaDePagamentoEhValida(Venda.Crosscutting.Models.FormaDePagamento)": {
+          "Lines": {
+            "32": 18,
+            "33": 18,
+            "34": 18,
+            "35": 18,
+            "36": 18,
+            "37": 18,
+            "38": 18
+          },
+          "Branches": [
+            {
+              "Line": 33,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 11
+            },
+            {
+              "Line": 33,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 8
+            },
+            {
+              "Line": 33,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 5
+            },
+            {
+              "Line": 33,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 3
+            },
+            {
+              "Line": 33,
+              "Offset": 3,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 15
+            },
+            {
+              "Line": 33,
+              "Offset": 7,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 15
+            },
+            {
+              "Line": 33,
+              "Offset": 11,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 15
+            },
+            {
+              "Line": 33,
+              "Offset": 15,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 15
+            }
+          ]
+        },
+        "System.Boolean Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem::FormaDePagamentoDefineCalculoNormal(Venda.Crosscutting.Models.FormaDePagamento)": {
+          "Lines": {
+            "41": 17,
+            "42": 17,
+            "43": 2,
+            "44": 15,
+            "45": 2,
+            "46": 13,
+            "47": 17
+          },
+          "Branches": [
+            {
+              "Line": 42,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 42,
+              "Offset": 7,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 15
+            },
+            {
+              "Line": 44,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 44,
+              "Offset": 19,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 13
+            }
+          ]
+        },
+        "System.Boolean Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem::QuantidadeDefineCalculoNormal(Venda.Dominio.ValueObjects.Quantidade,Venda.Dominio.ValueObjects.Quantidade)": {
+          "Lines": {
+            "50": 17,
+            "51": 17,
+            "52": 0,
+            "54": 17,
+            "55": 4,
+            "57": 13,
+            "58": 17
+          },
+          "Branches": [
+            {
+              "Line": 51,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 51,
+              "Offset": 7,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 17
+            },
+            {
+              "Line": 54,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 54,
+              "Offset": 24,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 13
+            }
+          ]
+        },
+        "Venda.Dominio.ValueObjects.ValorUnitario Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem::CalculoPrecoNormal(Venda.Dominio.ValueObjects.Quantidade,Venda.Dominio.ValueObjects.ValorUnitario)": {
+          "Lines": {
+            "61": 11,
+            "62": 11,
+            "63": 11
+          },
+          "Branches": []
+        },
+        "Venda.Dominio.ValueObjects.ValorUnitario Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem::CalcularPrecoPromocional(Venda.Dominio.ValueObjects.Quantidade,Venda.Dominio.ValueObjects.ValorUnitario)": {
+          "Lines": {
+            "66": 6,
+            "67": 6,
+            "68": 0,
+            "69": 6,
+            "70": 6
+          },
+          "Branches": [
+            {
+              "Line": 67,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 7,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Void Venda.Dominio.Modules.Impl.CalculadoraPrecoVendaItem::.ctor()": {
+          "Lines": {
+            "9": 66
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Dominio/Modules/Impl/NullCalculadoraPrecoVendaItem.cs": {
+      "Venda.Dominio.Modules.Impl.NullCalculadoraPrecoVendaItem": {
+        "Venda.Dominio.ValueObjects.ValorUnitario Venda.Dominio.Modules.Impl.NullCalculadoraPrecoVendaItem::Calcular(Venda.Crosscutting.Models.FormaDePagamento,Venda.Dominio.ValueObjects.Quantidade,Venda.Dominio.ValueObjects.ValorUnitario,Venda.Dominio.ValueObjects.Quantidade,Venda.Dominio.ValueObjects.ValorUnitario)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Dominio/Entities/VendaEntity.cs": {
+      "Venda.Dominio.Entities.VendaEntity": {
+        "Venda.Crosscutting.Models.ClienteDTO Venda.Dominio.Entities.VendaEntity::get_Cliente()": {
+          "Lines": {
+            "12": 24
+          },
+          "Branches": []
+        },
+        "Venda.Crosscutting.Models.FormaDePagamento Venda.Dominio.Entities.VendaEntity::get_FormaDePagamento()": {
+          "Lines": {
+            "13": 34
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<Venda.Dominio.Entities.VendaItemEntity> Venda.Dominio.Entities.VendaEntity::get_Itens()": {
+          "Lines": {
+            "14": 11
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Dominio.Entities.VendaEntity::AdicionarVendaItem(Venda.Dominio.Entities.VendaItemEntity)": {
+          "Lines": {
+            "32": 4,
+            "33": 4,
+            "34": 4
+          },
+          "Branches": []
+        },
+        "System.Decimal Venda.Dominio.Entities.VendaEntity::TotalVenda()": {
+          "Lines": {
+            "37": 6,
+            "38": 11,
+            "39": 6,
+            "40": 6
+          },
+          "Branches": []
+        },
+        "System.Boolean Venda.Dominio.Entities.VendaEntity::Validar()": {
+          "Lines": {
+            "43": 4,
+            "44": 4,
+            "45": 4
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Venda.Dominio.Entities.VendaEntity::Validate(System.ComponentModel.DataAnnotations.ValidationContext)": {
+          "Lines": {
+            "48": 0,
+            "49": 0,
+            "50": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Venda.Dominio.Entities.VendaEntity::Validate()": {
+          "Lines": {
+            "53": 5,
+            "54": 5,
+            "56": 5,
+            "57": 1,
+            "58": 5,
+            "59": 1,
+            "60": 5,
+            "61": 3,
+            "62": 23,
+            "63": 4,
+            "64": 4,
+            "65": 4,
+            "66": 2,
+            "67": 2,
+            "68": 2,
+            "70": 5,
+            "71": 5
+          },
+          "Branches": [
+            {
+              "Line": 56,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 56,
+              "Offset": 18,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 58,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 58,
+              "Offset": 53,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 5
+            },
+            {
+              "Line": 60,
+              "Offset": 90,
+              "EndOffset": 92,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3
+            },
+            {
+              "Line": 60,
+              "Offset": 90,
+              "EndOffset": 109,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 5
+            },
+            {
+              "Line": 62,
+              "Offset": 179,
+              "EndOffset": 125,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 4
+            },
+            {
+              "Line": 65,
+              "Offset": 158,
+              "EndOffset": 162,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 65,
+              "Offset": 158,
+              "EndOffset": 172,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 9
+            },
+            {
+              "Line": 62,
+              "Offset": 179,
+              "EndOffset": 181,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 5
+            }
+          ]
+        },
+        "System.Void Venda.Dominio.Entities.VendaEntity::.ctor()": {
+          "Lines": {
+            "16": 7,
+            "17": 7,
+            "18": 7,
+            "19": 7,
+            "20": 7,
+            "21": 7
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Dominio.Entities.VendaEntity::.ctor(Venda.Crosscutting.Models.ClienteDTO,Venda.Crosscutting.Models.FormaDePagamento)": {
+          "Lines": {
+            "22": 11,
+            "23": 11,
+            "24": 11,
+            "25": 0,
+            "26": 11,
+            "27": 11,
+            "28": 11,
+            "29": 11
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 14,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 11
+            }
+          ]
+        }
+      }
+    },
+    "/home/ft/Códigos/C#/SOLID_DIP/Venda.Dominio/Entities/VendaItemEntity.cs": {
+      "Venda.Dominio.Entities.VendaItemEntity": {
+        "System.String Venda.Dominio.Entities.VendaItemEntity::get_Descricao()": {
+          "Lines": {
+            "13": 21
+          },
+          "Branches": []
+        },
+        "Venda.Dominio.ValueObjects.ValorUnitario Venda.Dominio.Entities.VendaItemEntity::get_ValorUnitario()": {
+          "Lines": {
+            "14": 22
+          },
+          "Branches": []
+        },
+        "Venda.Dominio.ValueObjects.ValorUnitario Venda.Dominio.Entities.VendaItemEntity::get_ValorUnitarioPromocional()": {
+          "Lines": {
+            "15": 16
+          },
+          "Branches": []
+        },
+        "Venda.Dominio.ValueObjects.Quantidade Venda.Dominio.Entities.VendaItemEntity::get_Quantidade()": {
+          "Lines": {
+            "17": 21
+          },
+          "Branches": []
+        },
+        "Venda.Dominio.ValueObjects.Quantidade Venda.Dominio.Entities.VendaItemEntity::get_QuantidadePromocional()": {
+          "Lines": {
+            "18": 15
+          },
+          "Branches": []
+        },
+        "System.Decimal Venda.Dominio.Entities.VendaItemEntity::ValorTotal(Venda.Crosscutting.Models.FormaDePagamento)": {
+          "Lines": {
+            "43": 5,
+            "44": 5,
+            "45": 1,
+            "46": 4,
+            "47": 4,
+            "48": 5
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 44,
+              "Offset": 7,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Boolean Venda.Dominio.Entities.VendaItemEntity::Validar()": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Venda.Dominio.Entities.VendaItemEntity::Validate(System.ComponentModel.DataAnnotations.ValidationContext)": {
+          "Lines": {
+            "56": 0,
+            "57": 0,
+            "58": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Venda.Dominio.Entities.VendaItemEntity::Validate()": {
+          "Lines": {
+            "61": 6,
+            "62": 6,
+            "64": 6,
+            "65": 1,
+            "66": 6,
+            "67": 2,
+            "68": 6,
+            "69": 2,
+            "70": 6,
+            "71": 6
+          },
+          "Branches": [
+            {
+              "Line": 64,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 64,
+              "Offset": 20,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 66,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 66,
+              "Offset": 62,
+              "EndOffset": 97,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 6
+            },
+            {
+              "Line": 68,
+              "Offset": 120,
+              "EndOffset": 122,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 68,
+              "Offset": 120,
+              "EndOffset": 155,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Void Venda.Dominio.Entities.VendaItemEntity::.ctor()": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          },
+          "Branches": []
+        },
+        "System.Void Venda.Dominio.Entities.VendaItemEntity::.ctor(Venda.Crosscutting.Models.VendaItemDTO,Venda.Dominio.Modules.ICalculadoraPrecoVendaItem)": {
+          "Lines": {
+            "32": 10,
+            "33": 10,
+            "34": 10,
+            "35": 10,
+            "36": 10,
+            "37": 10,
+            "38": 10,
+            "39": 10,
+            "40": 10
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
