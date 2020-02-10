@@ -8,7 +8,7 @@ namespace Venda.Dominio.Entities
     {
         public virtual bool Validar()
         {
-            return Validate().Count() == 0;
+            return !Validate().Any();
         }
 
         public abstract IEnumerable<ValidationResult> Validate(ValidationContext validationContext);

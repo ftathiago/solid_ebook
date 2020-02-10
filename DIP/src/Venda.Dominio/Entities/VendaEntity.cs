@@ -49,14 +49,14 @@ namespace Venda.Dominio.Entities
 
             if (FormaDePagamento == FormaDePagamento.None)
                 listaErros.Add(new ValidationResult("Forma de pagamento não informada"));
-            if (Itens.Count() == 0)
+            if (!Itens.Any())
                 listaErros.Add(new ValidationResult("A venda não contém itens"));
             if (TotalVenda() <= 0)
                 listaErros.Add(new ValidationResult("O valor total da venda é igual ou inferior a zero"));
             foreach (var vendaItem in _itensLista)
             {
                 var mensagensErroItem = vendaItem.Validate();
-                if (mensagensErroItem.Count() == 0)
+                if (!mensagensErroItem.Any())
                     continue;
                 listaErros.AddRange(mensagensErroItem);
             }

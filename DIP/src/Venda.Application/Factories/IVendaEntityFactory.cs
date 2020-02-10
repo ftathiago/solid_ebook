@@ -5,6 +5,6 @@ namespace Venda.Application.Factories
 {
     public interface IVendaEntityFactory
     {
-        VendaEntity Criar(VendaModel vendaDTO);
+        VendaEntity Criar(VendaModel vendaModel);
     }
 }

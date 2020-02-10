@@ -8,7 +8,7 @@ namespace Venda.Application.App.Impl
     {
         private readonly List<MensagemErro> _mensagensErro;
 
-        public BaseApplication()
+        protected BaseApplication()
         {
             _mensagensErro = new List<MensagemErro>();
         }

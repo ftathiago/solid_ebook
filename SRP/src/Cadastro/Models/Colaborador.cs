@@ -22,6 +22,6 @@ namespace Cadastro.Models
         {
             return _horasDecimal.Sum(x => x);
         }
-        private List<decimal> _horasDecimal;
+        private readonly List<decimal> _horasDecimal;
     }
 }
